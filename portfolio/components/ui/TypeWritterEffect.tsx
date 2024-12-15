@@ -48,7 +48,15 @@ export const TypewriterEffect = ({
     }
 
     return () => clearTimeout(typingTimeout);
-  }, [displayedText, isDeleting, currentWordIndex, words, typingSpeed, pauseDuration, deleteSpeed]);
+  }, [
+    displayedText,
+    isDeleting,
+    currentWordIndex,
+    words,
+    typingSpeed,
+    pauseDuration,
+    deleteSpeed,
+  ]);
 
   return (
     <div

@@ -37,7 +37,7 @@ const Hero = () => {
           {/* Main Title */}
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless Experiences"
+            words="Transforming Concepts into Seamless User Experiences"
           />
 
           {/* Typewriter Section */}
@@ -49,7 +49,7 @@ const Hero = () => {
                 { text: "Photographer" },
                 { text: "Bike Enthusiast" },
               ]}
-              className="text-center my-4"
+              className="text-center py-2"
               cursorClassName="bg-blue-500"
             />
           </div>
