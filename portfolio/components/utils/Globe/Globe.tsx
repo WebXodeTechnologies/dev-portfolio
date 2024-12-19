@@ -43,9 +43,9 @@ const Globe = () => {
   >
     <div
       style={{
-        width: "100%", // Adjust the size of the globe container to make it appropriately large
-        height: "100%", // Adjust the size of the globe container
-        maxWidth: "500px", // Prevents the globe from becoming too large on bigger screens
+        width: "80%", // Adjust the size of the globe container to make it appropriately large
+        height: "80%", // Adjust the size of the globe container
+        maxWidth: "300px", // Prevents the globe from becoming too large on bigger screens
         overflow: "hidden",
         position: "relative",
         backgroundColor:"red",
