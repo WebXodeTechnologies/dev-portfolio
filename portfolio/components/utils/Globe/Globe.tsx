@@ -6,56 +6,54 @@ import { World } from "../Globe/index";
 
 const Globe = () => {
   useEffect(() => {
-    // Ensure this only runs in the browser, as the code depends on the DOM and window
     if (typeof window !== "undefined") {
-      // Check if the canvas doesn't exist already
-      if (!document.getElementById("globe-canvas")) {
-        const container = document.querySelector("#scene-container");
-        const world = new World(container as Element, undefined, globeConfig);
+      const container = document.getElementById("scene-container");
+      if (container && !container.querySelector("canvas")) {
+        const world = new World(container, undefined, globeConfig);
         world.start();
       }
     }
 
-    // Cleanup function to remove the globe when the component is unmounted
     return () => {
-      const canvasElement = document.getElementById("globe-canvas");
-      if (canvasElement) {
-        canvasElement.remove();
+      const container = document.getElementById("scene-container");
+      if (container) {
+        container.innerHTML = ""; // Clear the container
       }
     };
-  }, []); // Empty dependency array ensures this runs only once on mount
+  }, []);
+
 
   return (
     <div
-      id="scene-container"
+    id="scene-container"
+    style={{
+      width: "100%",
+      height: "100%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      position: "absolute",
+      top: 10,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      animation: "fadeIn 1.5s ease-out",
+      zIndex: 1, // Globe's base z-index (ensure it stays below text)
+    }}
+  >
+    <div
       style={{
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        position: "absolute",
-        top: 40,
-        left: 100,
-        right: 0,
-        bottom: 0,
-        animation: "fadeIn 1.5s ease-out",
-        zIndex: 1, // Globe's base z-index (ensure it stays below text)
+        width: "100%", // Adjust the size of the globe container to make it appropriately large
+        height: "100%", // Adjust the size of the globe container
+        maxWidth: "500px", // Prevents the globe from becoming too large on bigger screens
+        overflow: "hidden",
+        position: "relative",
+        backgroundColor:"red",
+        boxShadow: "0 6px 20px rgba(0, 0, 0, 0.3)", // Soft shadow for an attractive look
       }}
-    >
-      <div
-        style={{
-          width: "90%", // Adjust the size of the globe container to make it appropriately large
-          height: "90%", // Adjust the size of the globe container
-          maxWidth: "300px", // Prevents the globe from becoming too large on bigger screens
-          overflow: "hidden",
-          position: "relative",
-          borderRadius: "50%", // Keep it circular
-          boxShadow: "0 6px 20px rgba(0, 0, 0, 0.3)", // Soft shadow for an attractive look
-        }}
-      ></div>
-    </div>
+    ></div>
+  </div>
   );
-};
+}; 
 
 export default Globe;
