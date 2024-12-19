@@ -20,6 +20,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
+    "react-lottie": "^1.2.4",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.145.0",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "22.10.2",
+    "@types/react-lottie": "^1.2.10",
     "@types/three": "^0.144.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.0",
