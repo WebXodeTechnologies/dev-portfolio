@@ -179,7 +179,7 @@ class Globe {
 
   _buildData() {
     const arcs = this.flights;
-    let points = [];
+    const points = [];
     for (let i = 0; i < arcs.length; i++) {
       const arc = arcs[i];
       const rgb = hexToRgb(arc.color) as { r: number; g: number; b: number };
