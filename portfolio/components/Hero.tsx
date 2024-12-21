@@ -42,7 +42,7 @@ const Hero = () => {
 
           {/* Typewriter Section */}
           <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl font-inter">
-            <span>Hi, I'm Akash S M, </span>
+            <span>Hi, I&apos;m Akash S M, </span>
             <TypewriterEffect
               words={[
                 { text: "MERN Stack Developer" },
