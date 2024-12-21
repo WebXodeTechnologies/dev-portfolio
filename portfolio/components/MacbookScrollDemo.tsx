@@ -1,6 +1,5 @@
 import React from "react";
 import { MacbookScroll } from "../components/ui/macbook-scroll";
-import Link from "next/link";
 import Image1 from "../public/b1.svg";
 
 export function MacbookScrollDemo() {

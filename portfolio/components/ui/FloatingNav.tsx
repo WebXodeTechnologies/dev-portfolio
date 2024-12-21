@@ -28,7 +28,7 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         // also set true for the initial state
@@ -86,10 +86,7 @@ export const FloatingNav = ({
           </Link>
         ))}
         {/* remove this login btn */}
-        {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Login</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </button> */}
+        
       </motion.div>
     </AnimatePresence>
   );
