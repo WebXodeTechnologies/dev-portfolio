@@ -72,27 +72,27 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "/ui.earth.com",
+      title: "Weartrenz - Apparel E-commerce",
+      des: "Discover fashion trends with Weartrenz, your go-to online store for stylish apparel, offering seamless shopping and trendy collections.",
+      img: "/p1.png",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg",],
+      link: "https://apparel-e-commerce.vercel.app/",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "/ui.yoom.com",
+      title: "Mirror Tatoos",
+      des: "Transform your body art experience at Mirror Tattoos, where creativity meets precision in a state-of-the-art tattoo studio.",
+      img: "/mirror.png",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg",],
+      link: "https://mirror-final.vercel.app/",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "/ui.aiimg.com",
+      title: "Qkart Ecommerce",
+      des: "Qkart offers a seamless shopping experience for all your electronics needs, featuring cutting-edge technology and fast delivery.",
+      img: "/Qkart.png",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg",],
+      link: "https://akash-qkart-frontend-main.vercel.app/",
     },
     {
       id: 4,
@@ -107,35 +107,41 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Working with Visionary Designs was a seamless experience. Their team demonstrated unmatched creativity and technical expertise, delivering a website that exceeded all our expectations. We're thrilled with the results!",
+      name: "Chistian Grey",
+      title: "CEO of WearTrenz",
+      img: "/t1.jpg",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "The professionalism and attention to detail shown by the team were truly remarkable. They transformed our vision into a stunning and functional platform. Highly recommend their services to anyone in need of a digital upgrade.",
+      name: "Sofia Katherine",
+      title: "Founder of Qkart",
+      img: "/t2.jpg",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Their ability to translate our ideas into a captivating online presence was outstanding. The new website has greatly improved user engagement and helped drive more traffic. We couldn't be happier!",
+      name: "Isabella Martinez",
+      title: "Founder of Mirror-Tattoo Studio",
+      img: "/t3.jpg",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "We were impressed by their innovative approach and commitment to quality. The team provided exceptional support throughout the process, ensuring every detail was perfect. Our clients love the new look!",
+      name: "Olivia Brown",
+      title: "Managing Partner at Apex Media",
+      img: "/t4.jpg",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "From the initial consultation to the final launch, the experience was phenomenal. Their expertise in design and user experience helped us achieve a website that's both beautiful and highly functional. A fantastic collaboration!",
+      name: "Patrick Willson",
+      title: "Product Manager at Global Tech",
+      img: "/t5.png",
     },
   ];
+  
   
   export const companies = [
     {
@@ -146,9 +152,9 @@ export const navItems = [
     },
     {
       id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
+      name: "NextJS",
+      img: "/next.svg",
+      nameImg: "/nextjs.svg",
     },
     {
       id: 3,
@@ -173,14 +179,14 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
+      title: "Frontend Developer - Dastute Switcher Technologies",
       desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
+      title: "Software Developer - GreenLearnific Technologies",
       desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
@@ -194,7 +200,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
+      title: "Full Stack Developer - WebXode Technologies",
       desc: "Developed and maintained user-facing features using modern frontend technologies.",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
