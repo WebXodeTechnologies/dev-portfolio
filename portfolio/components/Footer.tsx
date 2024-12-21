@@ -1,5 +1,5 @@
 import { FaLocationArrow } from "react-icons/fa6";
-import { socialMedia } from "@/data";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import MagicButton from "./ui/MagicButton";
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+        <a href="mailto:akashvicky2012@gmail.com">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -37,14 +37,35 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <img src={info.img} alt="icons" width={20} height={20} />
-            </div>
-          ))}
+          {/* GitHub Icon with link */}
+          <a
+            href="https://github.com/ak220193" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+          >
+            <FaGithub size={20} />
+          </a>
+
+          {/* Instagram Icon with link */}
+          <a
+            href="https://www.instagram.com/vicky.jacky.3/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+          >
+            <FaInstagram size={20} />
+          </a>
+
+          {/* LinkedIn Icon with link */}
+          <a
+            href="https://www.linkedin.com/in/akash-s-m/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+          >
+            <FaLinkedin size={20} />
+          </a>
         </div>
       </div>
     </footer>
