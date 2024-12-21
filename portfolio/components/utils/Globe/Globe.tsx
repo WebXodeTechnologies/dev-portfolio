@@ -23,34 +23,21 @@ const Globe = () => {
   }, []);
 
   return (
-    <div
-      id="scene-container"
-      style={{
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        position: "absolute",
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        animation: "fadeIn 1.5s ease-out",
-        zIndex: 1, // Globe's base z-index (ensure it stays below text)
-      }}
-    >
-      <div
-        style={{
-          width: "80%", // Adjust the size of the globe container
-          height: "80%", // Adjust the size of the globe container
-          maxWidth: "300px", // Prevents the globe from becoming too large on bigger screens
-          maxHeight: "300px", // Ensure height also has a maximum constraint
-          overflow: "hidden",
-          position: "relative",
-          boxShadow: "0 6px 20px rgba(0, 0, 0, 0.3)", // Soft shadow for an attractive look
-        }}
-      ></div>
+    <div className="relative w-full h-full flex items-center justify-center">
+      {/* Container with max width and height restrictions */}
+      <div className="relative w-full h-full overflow-hidden">
+        
+        {/* Globe container */}
+        <div className="relative w-full h-96 sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px]">
+          {/* The gradient at the bottom */}
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b pointer-events-none from-transparent dark:to-black to-white z-40" />
+          
+          {/* Globe rendering container */}
+          <div className="absolute top-0 left-0 right-10 w-full h-full z-10">
+            <div id="scene-container" className="w-full h-full" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
