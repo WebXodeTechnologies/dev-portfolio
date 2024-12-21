@@ -3,8 +3,10 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import { MacbookScrollDemo } from "@/components/MacbookScrollDemo";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
+
 import { navItems } from "@/data/index";
 
 export default function Home() {
@@ -17,6 +19,7 @@ export default function Home() {
         <RecentProjects/>
         <Clients/>
         <Experience/>
+        <MacbookScrollDemo/>
         <Footer/>
       </div>
     </main>
