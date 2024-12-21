@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { MacbookScroll } from "../components/ui/macbook-scroll";
 import Image1 from "../public/b1.svg";

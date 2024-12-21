@@ -1,3 +1,4 @@
+'use client'
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import MagicButton from "./ui/MagicButton";

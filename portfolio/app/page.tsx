@@ -6,8 +6,9 @@ import Hero from "@/components/Hero";
 import { MacbookScrollDemo } from "@/components/MacbookScrollDemo";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-
 import { navItems } from "@/data/index";
+
+
 
 export default function Home() {
   return (
