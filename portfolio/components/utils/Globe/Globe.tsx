@@ -22,38 +22,37 @@ const Globe = () => {
     };
   }, []);
 
-
   return (
     <div
-    id="scene-container"
-    style={{
-      width: "100%",
-      height: "100%",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      position: "absolute",
-      top: 10,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      animation: "fadeIn 1.5s ease-out",
-      zIndex: 1, // Globe's base z-index (ensure it stays below text)
-    }}
-  >
-    <div
+      id="scene-container"
       style={{
-        width: "80%", // Adjust the size of the globe container to make it appropriately large
-        height: "80%", // Adjust the size of the globe container
-        maxWidth: "300px", // Prevents the globe from becoming too large on bigger screens
-        overflow: "hidden",
-        position: "relative",
-        backgroundColor:"red",
-        boxShadow: "0 6px 20px rgba(0, 0, 0, 0.3)", // Soft shadow for an attractive look
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        animation: "fadeIn 1.5s ease-out",
+        zIndex: 1, // Globe's base z-index (ensure it stays below text)
       }}
-    ></div>
-  </div>
+    >
+      <div
+        style={{
+          width: "80%", // Adjust the size of the globe container
+          height: "80%", // Adjust the size of the globe container
+          maxWidth: "300px", // Prevents the globe from becoming too large on bigger screens
+          maxHeight: "300px", // Ensure height also has a maximum constraint
+          overflow: "hidden",
+          position: "relative",
+          boxShadow: "0 6px 20px rgba(0, 0, 0, 0.3)", // Soft shadow for an attractive look
+        }}
+      ></div>
+    </div>
   );
-}; 
+};
 
 export default Globe;
