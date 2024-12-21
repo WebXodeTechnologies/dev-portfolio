@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@sentry/nextjs": "^8.47.0",
+    "@tabler/icons-react": "^3.26.0",
     "@tweenjs/tween.js": "^25.0.0",
     "@types/react": "^18.3.17",
     "@types/react-dom": "^18.3.5",
