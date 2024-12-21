@@ -49,13 +49,13 @@ const Hero = () => {
                 { text: "Photographer" },
                 { text: "Bike Enthusiast" },
               ]}
-              className="text-center py-2"
+              className="text-center py-2 text-purple"
               cursorClassName="bg-blue-500"
             />
           </div>
 
           {/* Call-to-Action Button */}
-          <a href="#about">
+          <a href="#projects">
             <MagicButton
               title="Show My Work"
               icon={<FaLocationArrow />}
