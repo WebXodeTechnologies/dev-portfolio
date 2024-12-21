@@ -122,7 +122,7 @@ class Globe {
         .showAtmosphere(this.showAtmosphere)
         .atmosphereColor(this.atmosphereColor)
         .atmosphereAltitude(this.atmosphereAltitude)
-        .hexPolygonColor(() => {
+        .hexPolygonColor((e) => {
           return this.polygonColor;
         });
     }, delay);

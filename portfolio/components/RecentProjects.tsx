@@ -2,7 +2,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data/index";
 import { PinContainer } from "./ui/PinContainer";
-import Image from "next/image";
+
 
 const RecentProjects = () => {
   return (
@@ -23,9 +23,9 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <Image src="/bg.png" alt="bgimg" />
+                  <img src="/bg.png" alt="bgimg" />
                 </div>
-                <Image src={item.img} alt="cover" className="object-contain rounded-lg" />
+                <img src={item.img} alt="cover" className="object-contain rounded-lg" />
               </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -47,7 +47,7 @@ const RecentProjects = () => {
                       className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{ transform: `translateX(-${5 * index + 2}px)` }}
                     >
-                      <Image src={icon} alt="icon5" className="p-2" />
+                      <img src={icon} alt="icon5" className="p-2" />
                     </div>
                   ))}
                 </div>
