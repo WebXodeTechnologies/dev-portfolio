@@ -9,7 +9,7 @@ export function MacbookScrollDemo() {
       <h1 className="heading text-center my-4">
         Revolutionizing Digital Interactions
       </h1>
-      <h3 className="text-purple heading mt-10 text-center"> Explore Now</h3>
+      <h3 className="text-purple heading mt-10 text-center mb-10"> Explore Now</h3>
       <MacbookScroll
         title={
           <span className="mb-5">
