@@ -26,12 +26,12 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16  md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2024 AKASH S M
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center sm:mt-5 md:gap-3 gap-6">
           {/* GitHub Icon with link */}
           <a
             href="https://github.com/ak220193" 
